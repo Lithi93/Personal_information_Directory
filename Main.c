@@ -22,6 +22,14 @@ const unsigned long hash(const char *str) {
 }
 
 
+char commands(){
+        //return all commands in the softaware
+        char command[20];
+
+        return command;
+}
+
+
 int main(){
         // main action loop for user to do something
         char user_input[20]; // stores user input
@@ -30,6 +38,11 @@ int main(){
                 printf("\nWhat you want to do?\n");
                 printf("<<< ");
                 scanf("%s", &user_input);
+
+                // make all characters in user_input to lowcase
+                for(int i = 0; user_input[i]; i++) {
+                        user_input[i] = tolower(user_input[i]);
+                }
 
                 printf("Users selection: %s and its hash %d\n", &user_input, hash(user_input));  // debug
 
