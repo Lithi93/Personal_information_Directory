@@ -1,0 +1,4 @@
+exit (exists the program)
+add person (adds new person to the list of persons)
+remove person (removes person from the list of persons)
+edit person (edits selected persons information)
